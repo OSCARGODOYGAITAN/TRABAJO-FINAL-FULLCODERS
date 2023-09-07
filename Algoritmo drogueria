@@ -1,0 +1,49 @@
+Algoritmo drogueria 
+	
+	Definir producto Como numerica
+	Definir cantidad Como numerica
+	DEfinir rentabilidad como numerica
+	Escribir "producto solicitado";
+	Escribir "1.producto1" 
+	Escribir "2.producto2"
+	Escribir "3.producto3"
+	Leer producto; 
+	Escribir "cantidad a comprar";
+	Leer cantidad;
+	Segun producto hacer
+		1: Si cantidad>300
+				Escribir "stock insuficiente"
+				Sino 
+				rentabilidad <-cantidad *(2000-1000)
+				Escribir "rentabilidad esperada" " " cantidad *(2000-1000)
+				Si rentabilidad<10000 Entonces
+					Escribir "no cotizar"
+					Sino escribir "cotizar"
+				FinSi
+			FinSi
+		2: Si cantidad>500
+				Escribir "stock insuficiente"
+				Sino
+				rentabilidad<-cantidad *(1000-500)
+				Escribir "rentabilidad esperada" " " cantidad *(1000-500)
+				Si rentabilidad<10000 Entonces
+					Escribir "no cotizar"
+				Sino escribir "cotizar"
+				FinSi
+			FinSi
+		3:Si cantidad>50
+				Escribir "stock insuficiente"
+				Sino 
+				rentabilidad<-cantidad *(7500-5000)
+				Escribir "rentabilidad esperada" " " cantidad *(7500-5000)
+				Si rentabilidad<10000 Entonces
+					Escribir "no cotizar"
+				Sino escribir "cotizar"
+				FinSi
+			FinSi
+		De Otro Modo: Escribir "producto no encontrado"
+			
+	FinSegun
+	
+
+FinAlgoritmo
